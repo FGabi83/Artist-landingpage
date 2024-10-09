@@ -30,6 +30,7 @@ resize img to 1000px width for high resolution
     top: var(--header-height);
     display: block;
     width:      83.4375vw;
+    
     font-size: var(--font-size-regular); 
     line-height: var(--line-height-regular);
     font-weight: 300;
@@ -59,4 +60,35 @@ figcaption {
   .paintings-wrapper {
     gap: 4rem;
   }
+}
+
+@media(min-width: 1245px) {
+  .sticky-header {
+    order: 2;
+    bottom: 10vh;
+    align-self: flex-start;
+    width: 302px;
+    padding-left: 4rem;
+    text-align: left !important;
+  }
+  #forsale {
+    gap: 0;
+  }
+  figure {
+    height: 100vh;
+  }
+
+  .single-painting {
+    box-sizing: content-box;
+    padding: 2rem;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
+  }
+  
+}
+
+@media(min-width: 1568px) {
+  .sticky-header {
+    padding-left: 0;
+  }
+  
 }

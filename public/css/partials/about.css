@@ -18,7 +18,7 @@
   margin-bottom: var(--line-height-regular);
   
 }
-
+/*963px volt*/
 @media(min-width: 963px) {
   .about-wrapper {
     flex-flow:       row-reverse nowrap;
@@ -26,6 +26,7 @@
     align-items:     center;
     gap:             2rem;
     max-width:       858px;
+    z-index:         200;
   }
 
   .profile-img {
